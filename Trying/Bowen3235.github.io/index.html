@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="picbox.css">
+	<script src="picpos.js"></script>
+</head>
+<body>
+
+<!--
+<h2>Image Text Blocks</h2>
+
+<p>How to place text blocks over an image:</p>
+
+<div class="container">
+	<div class="text-block">
+		<h4>Nature</h4>
+		<p>What a beautiful sunrise</p>
+	</div>
+</div>
+
+<p id="demo" ></p>
+
+<script>
+	for( i=0;i<100;i++ ){
+		document.write( "<br>" );
+	}
+</script>
+!-->
+
+<div class="imgcontainer" onscroll="return_scroll();" >
+	<img src="outdoor.png" class="imgBackGround">
+</div>
+<p id="demo" > device-width</p>
+
+<div class="mode-Container" >
+	<div class="list-container">
+		<div class = "mode-list" >
+			<a  href="#" ><b>photo</b></a>
+			<p class="" style="line-height: 5px;"></p>
+			<a  href="#" ><b>vedio</b></a>
+			<p class="" style="line-height: 5px;"></p>
+			<a  href="#" ><b>list</b></a>
+		</div>
+	</div>
+	<p style="line-height: 5px; font-size: 5px; "><br></p>
+	<button class="mode-Button"  onclick="showlist('mode-list')" ><b>Mode</b></button> 	
+</div>
+
+<div class="Nav-Container">
+	<button id="up" class="Nav-Btw" style=" top: 0%; left:50%; transform: translate(-50%);" onclick="Moveimg( 'Up' )" >
+		<img src="arrow-up.png" class="btw-img" >
+	</button>
+
+	<button id="left" class="Nav-Btw" style=" top: 50%; left:0%;transform: translateY(-50%);" onclick="Moveimg( 'Left' )">
+		<img src="arrow-up.png" style="
+			top: 0;
+			left: 0;
+			transform:rotate(-90deg) translateY(-13%);" class="btw-img" >
+	</button>
+
+	<button id="right" class="Nav-Btw" style="top: 50%;right: 0%;transform: translateY(-50%);" onclick="Moveimg( 'Right' )">
+		<img src="arrow-up.png" style="
+			left: 0;
+			transform:rotate(90deg) translate(-50%);" class="btw-img" >
+	</button>
+
+	<button id="down" class="Nav-Btw" style="bottom:0%;left:50%;transform: translate(-50%);"onclick="Moveimg( 'Down' )" >
+		<img src="arrow-up.png" style="
+			top:0;
+			left:0;
+			transform:rotate(-180deg) translate(10%,-7%) ;" class="btw-img" >
+	</button>
+
+</div>
+
+
+</body>
+</html> 
